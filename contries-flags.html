@@ -93,12 +93,39 @@
         width: 100%;
         height: 280px;
         background-image: radial-gradient(circle at 175px,#fff 75px,red 0);
+        background-image: -webkit-radial-gradient(circle at 175px,#fff 75px,red 0);
         top: 60px;
         left: 0;
     }
     .southkorea{
         background-color: #fff;
         border:1px solid #333;
+    }
+    .southkorea:before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top:50%;
+        margin-top: -100px;
+        margin-left: -100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image:linear-gradient(-110deg,#CC2939 50%,#163296 0%);
+        background-image: -webkit-linear-gradient(-110deg,#CC2939 50%,#163296 0%);
+    }
+    .southkorea:after{
+        content: '';
+        position: absolute;
+        left: 42.3%;
+        top: 45.5%;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #cc2939;
+        box-shadow: 94px 33px 0 #163296;
     }
 
 </style>
