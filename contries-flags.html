@@ -62,7 +62,7 @@
 /*japan*/
     .japan{
         background-color: #fff;
-        border:1px solid #333;
+        border:1px solid #ccc;
     }
     .japan:before{
         content: "";
@@ -97,22 +97,24 @@
         top: 60px;
         left: 0;
     }
+
+    /*southkorea*/
     .southkorea{
         background-color: #fff;
-        border:1px solid #333;
+        border:1px solid #ccc;
     }
-    .southkorea:before{
+    .southkorea:before {
         content: '';
         position: absolute;
         left: 50%;
-        top:50%;
+        top: 50%;
         margin-top: -100px;
         margin-left: -100px;
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-image:linear-gradient(-110deg,#CC2939 50%,#163296 0%);
-        background-image: -webkit-linear-gradient(-110deg,#CC2939 50%,#163296 0%);
+        background-image: linear-gradient(-110deg, #CC2939 50%, #163296 0%);
+        background-image: -webkit-linear-gradient(-110deg, #CC2939 50%, #163296 0%);
     }
     .southkorea:after{
         content: '';
@@ -126,6 +128,231 @@
         border-radius: 50%;
         background-color: #cc2939;
         box-shadow: 94px 33px 0 #163296;
+    }
+
+    /*.southkorea:after{*/
+        /*content: '';*/
+        /*position: absolute;*/
+        /*top:70px;*/
+        /*left:50px;*/
+        /*width: 50px;*/
+        /*height: 15px;*/
+        /*!*transform: rotate(-50deg);*!*/
+        /*background-color: #000;*/
+        /*!*background-image: repeating-linear-gradient(to bottom, #fff, red 22px, #26603b 22px, #26603b 24px, #73b38a 24px, #73b38a 25px);*!*/
+
+        /*box-shadow:50px 0 0 0,60px 0 0 0, 0px 20px 0 0,0 40px 0 0,50px 20px 0 0,60px 20px 0 0,50px 40px 0 0,60px 40px 0 0,*/
+        /*0 100px,50px 100px,60px 100px, 0px 120px 0 0,0 140px 0 0,60px 120px 0 0,50px 140px 0 0,60px 140px 0 0;*/
+    /*}*/
+
+    #yin-yang {
+        width: 96px;
+        height: 48px;
+        background: #eee;
+        border-color: red;
+        border-style: solid;
+        border-width: 2px 2px 50px 2px;
+        border-radius: 100%;
+        position: relative;
+    }
+    #yin-yang:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #eee;
+        border: 18px solid red;
+        border-radius: 100%;
+        width: 12px;
+        height: 12px;
+    }
+    #yin-yang:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        border: 18px solid #eee;
+        border-radius:100%;
+        width: 12px;
+        height: 12px;
+    }
+
+    /*russia*/
+    .russia{
+        border:1px solid #ccc;
+        box-shadow:inset 0 -133.333px 0 red,inset 0 -266.66px 0 blue;
+
+    }
+
+    /*Turkey*/
+    .turkey{
+        background-color: #CE1126;
+    }
+    .turkey:before{
+        content: "★";
+        color: transparent;
+        font-size: 90px;
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        margin-top: -100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #CE1126;
+        box-shadow: inset 30px 0 0px 25px #fff;
+        text-shadow: 190px 50px 0 #fff;
+    }
+
+    /*Singapore*/
+    .singapore{
+        border:1px solid #ccc;
+        background-color: red;
+        box-shadow:inset 0 -200px 0 #fff;
+    }
+    .singapore:before{
+        content: "★";
+        color: transparent;
+        font-size: 35px;
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: red;
+        box-shadow: inset 30px 0 0px 5px #fff;
+        text-shadow: 108px 20px 0 #fff,65px 50px 0 #fff,145px 50px 0 #fff,130px 90px 0 #fff,85px 90px 0 #fff;
+    }
+
+    /*Azerbaijan*/
+    .azerbaijan{
+        background-color: dodgerblue;
+        box-shadow:inset 0 -133.33px 0 green,inset 0 -266.66px 0 red;
+    }
+    .azerbaijan:before{
+        content: '✸';
+        color: transparent;
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        margin-left: -60px;
+        margin-top: -60px;
+        width: 120px;
+        height: 120px;
+        background-color: red;
+        border-radius: 50%;
+        box-shadow: inset 19px 0 0 12px #fff;
+        text-shadow: 92px 19px 0 #fff;
+    }
+
+    /*Bahrain*/
+    .bahrain{
+        border:1px solid #ccc;
+        background-color: red;
+        box-shadow: inset 180px 0 0 #fff;
+    }
+    .bahrain:before,.bahrain:after{
+        content: '';
+        position: absolute;
+        left: 180px;
+        top:0;
+        width: 0;
+        height: 0;
+        border: 40px solid red;
+        border-left: 80px solid #fff;
+    }
+    .bahrain:after{
+        top:80px;
+    }
+
+    /*Armenia*/
+    .armenia{
+        background-color: red;
+        box-shadow:inset 0 -133.333px 0 #f88519,inset 0 -266.66px 0 blue;
+    }
+
+    /*East Timor*/
+    .easttimor{
+        background-color: red;
+    }
+    .easttimor:before{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border:200px solid transparent;
+        border-left: 350px solid #f8bf2f;
+    }
+    .easttimor:after{
+        content:'★' ;
+        font-size: 80px;
+        color: transparent;
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 2;
+        width: 0;
+        height: 0;
+        border:200px solid transparent;
+        border-left: 250px solid #000;
+        text-shadow: -210px -45px 0 #fff;
+    }
+
+    /*Georgia*/
+    .georgia{
+        border:1px solid #ccc;
+    }
+    .georgia:before{
+        content: '';
+        position: absolute;
+        top:50%;
+        margin-top: -50px;
+        width: 100%;
+        height:100px ;
+        background-color: red;
+    }
+    .georgia:after{
+        content: '✚';
+        color: yellow;
+        position: absolute;
+        color: transparent;
+        width: 100px;
+        height: 100%;
+        left: 50%;
+        margin-left: -50px;
+        background-color: red;
+        font-size: 100px;
+        text-shadow: -165px 25px 0 red,190px 25px 0 red,-165px 270px 0 red,190px 270px 0 red;
+    }
+
+    /*Israel*/
+    .israel{
+        border: 1px solid #ccc;
+        box-shadow: inset 0 40px 0 #fff,inset 0 100px 0 blue,inset 0 300px 0 #fff,inset 0 360px 0 blue;
+
+    }
+    .israel:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top:55%;
+        margin-top: -75px;
+        margin-left: -100px;
+        border:95px solid transparent;
+        border-top: 150px solid blue;
+    }
+    .israel:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top:21%;
+        margin-top: -75px;
+        margin-left: -100px;
+        border:95px solid transparent;
+        border-bottom: 150px solid blue;
     }
 
 </style>
@@ -148,8 +375,43 @@
         <h3>South Korea</h3>
         <div class="country southkorea"></div>
     </div>
-
-
+    <!--<div id="yin-yang"></div>-->
+    <div class="flags-content">
+        <h3>Russia</h3>
+        <div class="country russia"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Turkey</h3>
+        <div class="country turkey"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Singapore</h3>
+        <div class="country singapore"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Azerbaijan</h3>
+        <div class="country azerbaijan"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Bahrain</h3>
+        <div class="country bahrain"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Armenia</h3>
+        <div class="country armenia"></div>
+    </div>
+    <div class="flags-content">
+        <h3>East Timor</h3>
+        <div class="country easttimor"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Georgia</h3>
+        <div class="country georgia"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Israel</h3>
+        <div class="country israel"></div>
+    </div>
 </div>
 </body>
 </html>
