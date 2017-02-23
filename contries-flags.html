@@ -29,9 +29,11 @@
         position: relative;
     }
     .country{
+        box-sizing: border-box;
         width: 600px;
         height: 400px;
         position: relative;
+        border:1px solid #ccc;
     }
 
 
@@ -61,20 +63,10 @@
 
 /*japan*/
     .japan{
-        background-color: #fff;
-        border:1px solid #ccc;
+        background-image: radial-gradient(circle at center,red 100px,#fff 0);
+        background-image: -webkit-radial-gradient(circle at center,red 100px,#fff 0);
     }
-    .japan:before{
-        content: "";
-        position: absolute;
-        left: 50%;
-        top:50%;
-        transform: translate(-50%,-50%);
-        border-radius:50%;
-        width: 200px;
-        height: 200px;
-        background-color: #8b150e;
-    }
+
     /*North Korea*/
     .northkorea:before{
         content: '';
@@ -101,7 +93,6 @@
     /*southkorea*/
     .southkorea{
         background-color: #fff;
-        border:1px solid #ccc;
     }
     .southkorea:before {
         content: '';
@@ -207,7 +198,6 @@
 
     /*Singapore*/
     .singapore{
-        border:1px solid #ccc;
         background-color: red;
         box-shadow:inset 0 -200px 0 #fff;
     }
@@ -250,7 +240,6 @@
 
     /*Bahrain*/
     .bahrain{
-        border:1px solid #ccc;
         background-color: red;
         box-shadow: inset 180px 0 0 #fff;
     }
@@ -330,31 +319,130 @@
 
     /*Israel*/
     .israel{
-        border: 1px solid #ccc;
-        box-shadow: inset 0 40px 0 #fff,inset 0 100px 0 blue,inset 0 300px 0 #fff,inset 0 360px 0 blue;
+        box-shadow: inset 0 40px 0 #fff,inset 0 100px 0 #0000C1,inset 0 300px 0 #fff,inset 0 360px 0 rgba(0, 0, 193, 0.78);
 
     }
     .israel:before{
-        content: "";
+        content: "✡";
         position: absolute;
+        color: #0000C1;
+        font-weight: bold;
+        font-size: 250px;
         left: 50%;
-        top:55%;
-        margin-top: -75px;
-        margin-left: -100px;
-        border:95px solid transparent;
-        border-top: 150px solid blue;
+        top:50%;
+        transform: translate(-50%,-50%);
+        /*border:95px solid transparent;*/
+        /*border-top: 150px solid blue;*/
     }
-    .israel:after{
-        content: "";
-        position: absolute;
-        left: 50%;
-        top:21%;
-        margin-top: -75px;
-        margin-left: -100px;
-        border:95px solid transparent;
-        border-bottom: 150px solid blue;
+    /*.israel:after{*/
+        /*content: "";*/
+        /*position: absolute;*/
+        /*left: 50%;*/
+        /*top:21%;*/
+        /*margin-top: -75px;*/
+        /*margin-left: -100px;*/
+        /*border:95px solid transparent;*/
+        /*border-bottom: 150px solid blue;*/
+    /*}*/
+
+    /*Jordan*/
+    .jordan{
+        background-color: #000;
+        box-shadow: inset 0 -133.33px 0 green,inset 0 -266.66px 0 #fff;
+    }
+    .jordan:before{
+        content: '✷';
+        font-size: 100px;
+        color: transparent;
+        text-shadow: -255px -50px 0 #fff;
+        display: block;
+        width: 0;
+        height: 0;
+        border:200px solid transparent;
+        border-left: 350px solid #cc2939;
     }
 
+    /*Kuwait*/
+    .kuwait{
+        background-color:#fff;
+        border-top: 130px solid lightseagreen;
+        border-bottom: 130px solid red;
+        border-left: 200px solid #000;
+    }
+    /*Laos*/
+    .laos{
+        background-image: radial-gradient(circle at center,#fff 80px,darkblue 0);
+        background-image: -webkit-radial-gradient(circle at center,#fff 80px,darkblue 0);
+        box-shadow:inset 0 -100px 0 red,inset 0 100px 0 red;
+    }
+
+    /*Malaysia*/
+    .malaysia{
+        box-shadow:inset 0 -25px 0 #fff,inset 0 -55px 0 #cc2939,inset 0 -85px 0 #fff,
+        inset 0 -115px 0 #cc2939,inset 0 -145px 0 #fff,inset 0 -175px 0 #cc2939,inset 0 -205px 0 #fff,
+        inset 0 -235px 0 #cc2939,inset 0 -265px 0 #fff,inset 0 -295px 0 #cc2939,inset 0 -325px 0 #fff,
+        inset 0 -355px 0 #cc2939,inset 0 -385px 0 #fff,inset 0 -395px 0 #cc2939,inset 0 -400px 0 #cc2939;
+    }
+    .malaysia:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 50%;
+        height: 55%;
+        background-color: darkblue;
+    }
+    .malaysia:after{
+        content: '✹';
+        color: transparent;
+        font-size: 150px;
+        text-shadow: 95px 0 0 #f8bf2f;
+        position: absolute;
+        left: 50px;
+        top: 30px;
+        width: 150px;
+        height: 150px;
+        background-color: darkblue;
+        border-radius: 50%;
+        box-shadow: inset 20px 0 0 10px #f8bf2f;
+    }
+
+    /*Maldives*/
+    .maldives{
+        border:100px solid #cc2939;
+        background-color: darkgreen;
+    }
+    .maldives:before{
+        content: '';
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        margin-top: -75px;
+        margin-left: -75px;
+        width: 150px;
+        height: 150px;
+        background-color: darkgreen;
+        border-radius: 50%;
+        box-shadow: inset 30px 0 0 0 #fff;
+    }
+
+    /*Yemen*/
+    .yemen{
+        background-color:red;
+        box-shadow: inset 0 -133.33px 0 #000,inset 0 -266.66px 0 #fff;
+    }
+
+    /*United Arab Emirates*/
+    .united-arab-emirates{
+        background-color:green;
+        box-shadow: inset 0 -133.33px 0 #000,inset 0 -266.66px 0 #fff;
+        border-left: 200px solid darkred;
+    }
+
+    /*Vietnam*/
+    .vietnam{
+        
+    }
 </style>
 <body>
 <h2>Asia</h2>
@@ -411,6 +499,38 @@
     <div class="flags-content">
         <h3>Israel</h3>
         <div class="country israel"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Jordan</h3>
+        <div class="country jordan"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Kuwait</h3>
+        <div class="country kuwait"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Laos</h3>
+        <div class="country laos"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Malaysia</h3>
+        <div class="country malaysia"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Maldives</h3>
+        <div class="country maldives"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Yemen</h3>
+        <div class="country yemen"></div>
+    </div>
+    <div class="flags-content">
+        <h3>United Arab Emirates</h3>
+        <div class="country united-arab-emirates"></div>
+    </div>
+    <div class="flags-content">
+        <h3>Vietnam</h3>
+        <div class="country Vietnam"></div>
     </div>
 </div>
 </body>
