@@ -14,7 +14,7 @@ CSS3 实现各国国旗
 
 ## 已完成
 
-- [x] 部分国家（中国）
+- [x] 部分国家（中国等）
 
 
 ## 计划
@@ -24,3 +24,43 @@ CSS3 实现各国国旗
 ##资源
 
 国旗参考:[flagpeida](http://flagpedia.net/),感谢!
+
+##贡献
+
+规则:
+
+>尽量一个div元素完成国旗的绘制
+
+代码格式:
+
+HTML:
+
+    <div class="flags-content">
+        <h3>China</h3>
+        <div class="country china"></div>
+    </div>
+    
+CSS代码:
+
+    /*china*/
+    .china{
+        background:#CE1126;
+    }
+    .china:before,.china:after{
+        content: "★";
+        position: absolute;
+        color:#FCD116;
+    }
+    .china:before{
+        font-size: 90px;
+        top: 60px;
+        left: 50px;
+    }
+    .china:after{
+        left: 160px;
+        top: 30px;
+        font-size: 33px;
+        text-shadow:#FCD116 40px 50px 0,#FCD116 40px 100px 0,#FCD116 0 150px 0 ;
+    }
+
+
