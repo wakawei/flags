@@ -42,7 +42,16 @@ HTML:
     
 CSS代码:
 
+    .country{
+        box-sizing: border-box;
+        width: 600px;
+        height: 400px;
+        position: relative;
+        border:1px solid #ccc;
+    }
+    
     /*china*/
+    
     .china{
         background:#CE1126;
     }
@@ -63,4 +72,4 @@ CSS代码:
         text-shadow:#FCD116 40px 50px 0,#FCD116 40px 100px 0,#FCD116 0 150px 0 ;
     }
 
-
+在线预览: https://codepen.io/wakawei/pen/yMYOaE
