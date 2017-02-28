@@ -9,7 +9,7 @@ CSS3 实现各国国旗
 
 ## 动力
 
-提高CSS3的使用能力，同时得到（http://a.singlediv.com/）和（http://one-div.com/）的启发，在此感谢。
+提高CSS3的使用能力，同时得到[singlediv](http://a.singlediv.com/)和[one-div](http://one-div.com/)的启发，在此感谢。
 
 
 ## 已完成
