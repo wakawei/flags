@@ -20,3 +20,7 @@ CSS3 实现各国国旗
 ## 计划
 
 - [ ] 剩余国家
+
+##资源
+
+国旗参考:[flagpeida](http://flagpedia.net/),感谢!
