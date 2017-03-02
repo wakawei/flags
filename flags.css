@@ -114,60 +114,34 @@ h3{
     background-color: #cc2939;
     box-shadow: 94px 33px 0 #163296;
 }
-
-/*.southkorea:after{*/
-/*content: '';*/
-/*position: absolute;*/
-/*top:70px;*/
-/*left:50px;*/
-/*width: 50px;*/
-/*height: 15px;*/
-/*!*transform: rotate(-50deg);*!*/
-/*background-color: #000;*/
-/*!*background-image: repeating-linear-gradient(to bottom, #fff, red 22px, #26603b 22px, #26603b 24px, #73b38a 24px, #73b38a 25px);*!*/
-
-/*box-shadow:50px 0 0 0,60px 0 0 0, 0px 20px 0 0,0 40px 0 0,50px 20px 0 0,60px 20px 0 0,50px 40px 0 0,60px 40px 0 0,*/
-/*0 100px,50px 100px,60px 100px, 0px 120px 0 0,0 140px 0 0,60px 120px 0 0,50px 140px 0 0,60px 140px 0 0;*/
-/*}*/
-
-#yin-yang {
-    width: 96px;
-    height: 48px;
-    background: #eee;
-    border-color: red;
-    border-style: solid;
-    border-width: 2px 2px 50px 2px;
-    border-radius: 100%;
-    position: relative;
-}
-#yin-yang:before {
-    content: "";
+.southkorea i{
     position: absolute;
-    top: 50%;
-    left: 0;
-    background: #eee;
-    border: 18px solid red;
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
+    top:90px;
+    left:75px;
+    width: 50px;
+    height: 15px;
+    transform: rotate(-50deg);
+    background-color: #000;
+    box-shadow:50px 0 0 0,60px 0 0 0, 0px 20px 0 0,0 40px 0 0,50px 20px 0 0,60px 20px 0 0,50px 40px 0 0,60px 40px 0 0,
+    110px 375px,50px 395px, 50px 415px 0 0,50px 375px 0 0,110px 395px 0 0,110px 415px 0 0;
 }
-#yin-yang:after {
-    content: "";
+.southkorea i:before{
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    background: red;
-    border: 18px solid #eee;
-    border-radius:100%;
-    width: 12px;
-    height: 12px;
+    top: 235px;
+    left: 260px;
+    width: 50px;
+    height: 15px;
+    transform: rotate(90deg);
+    background-color: #000;
+    box-shadow:58px 0 0 0,60px 0 0 0, 0px 20px 0 0,0 40px 0 0,50px 20px 0 0,60px 20px 0 0,58px 40px 0 0,60px 40px 0 0,
+    -110px 375px,-100px 375px,-50px 395px, -50px 415px 0 0,-50px 375px 0 0,-110px 395px 0 0,-110px 415px 0 0,-100px 415px 0 0;
 }
 
 /*russia*/
 .russia{
     border:1px solid #ccc;
     box-shadow:inset 0 -133.333px 0 red,inset 0 -266.66px 0 blue;
-
 }
 
 /*Turkey*/
@@ -237,7 +211,7 @@ h3{
     background-color: red;
     box-shadow: inset 180px 0 0 #fff;
 }
-.bahrain:before,.bahrain:after{
+.bahrain:before,.bahrain:after,.bahrain i:before,.bahrain i:after{
     content: '';
     position: absolute;
     left: 180px;
@@ -249,6 +223,23 @@ h3{
 }
 .bahrain:after{
     top:80px;
+}
+.bahrain i{
+    position: absolute;
+    left: 180px;
+    top: 160px;
+    width: 0;
+    height: 0;
+    border: 40px solid red;
+    border-left: 80px solid #fff;
+}
+.bahrain i:before{
+    top: 39px;
+    left: -80px;
+}
+.bahrain i:after{
+    top: 118px;
+    left: -80px;
 }
 
 /*Armenia*/
@@ -325,19 +316,7 @@ h3{
     left: 50%;
     top:50%;
     transform: translate(-50%,-50%);
-    /*border:95px solid transparent;*/
-    /*border-top: 150px solid blue;*/
 }
-/*.israel:after{*/
-/*content: "";*/
-/*position: absolute;*/
-/*left: 50%;*/
-/*top:21%;*/
-/*margin-top: -75px;*/
-/*margin-left: -100px;*/
-/*border:95px solid transparent;*/
-/*border-bottom: 150px solid blue;*/
-/*}*/
 
 /*Jordan*/
 .jordan{
