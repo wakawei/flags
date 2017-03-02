@@ -460,3 +460,134 @@ h3{
 }
 
 /*United Kingdom*/
+
+/*Saint Kitts and Nevis*/
+.saints{
+    background-image: linear-gradient(to top left,red 50%,green 0%);
+    overflow: hidden;
+}
+.saints:before{
+    content: '★';
+    color: transparent;
+    font-size: 100px;
+    position: absolute;
+    left: -60px;
+    top:50%;
+    width:120%;
+    height: 150px;
+    background:#000;
+    margin-top: -75px;
+    box-shadow: inset 0 -20px 0 #f8bf2f,inset 0 20px 0 #f8bf2f;
+    text-shadow: 160px 20px 0 #fff,430px 20px 0 #fff;
+    transform: rotate(-35deg);
+}
+
+/*Namibia*/
+.namibia{
+    background-image: linear-gradient(to top left,green 50%,blue 0%);
+    overflow: hidden;
+}
+.namibia:before{
+    content: '';
+    font-size: 100px;
+    position: absolute;
+    left: -60px;
+    top:50%;
+    width:120%;
+    height: 150px;
+    background:red;
+    margin-top: -75px;
+    box-shadow: inset 0 -20px 0 #fff,inset 0 20px 0 #fff;
+    transform: rotate(-35deg);
+}
+.namibia:after{
+    content: '';
+    font-size: 40px;
+    position: absolute;
+    left: 63px;
+    top: 60px;
+    width: 95px;
+    height: 95px;
+    background: #f8bf2f;
+    border-radius: 50%;
+}
+.namibia i{
+    position: absolute;
+    border:15px solid transparent;
+    border-bottom: 30px solid #f8bf2f;
+}
+.namibia i:before,.namibia i:after{
+    content: '';
+    position: absolute;
+    border:15px solid transparent;
+    border-bottom: 30px solid #f8bf2f;
+}
+.namibia i:first-child{
+    left: 98px;
+    top: 5px;
+    transform: rotate(5deg);
+}
+.namibia i:first-child:before{
+    left: 23px;
+    top: -6px;
+    transform: rotate(25deg);
+    -webkit-transform:rotate(25deg) ;
+}
+.namibia i:first-child:after{
+    left: 53px;
+    top: 20px;
+    transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+}
+.namibia i:nth-child(2){
+    left: 56px;
+    top: 14px;
+    transform: rotate(-33deg);
+    -webkit-transform: rotate(-33deg);
+
+}
+.namibia i:nth-child(2):before{
+    left: -50px;
+    top: -8px;
+    transform: rotate(-24deg);
+    -webkit-transform: rotate(-24deg);
+}
+.namibia i:nth-child(2):after{
+    left: -80px;
+    top: 14px;
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+}
+.namibia i:nth-child(3){
+    left: 25px;
+    top: 116px;
+    transform: rotate(-116deg);
+    -webkit-transform: rotate(-116deg);
+}
+.namibia i:nth-child(3):before{
+    left: -52px;
+    top: -8px;
+    transform: rotate(-24deg);
+    -webkit-transform: rotate(-24deg);
+}
+.namibia i:nth-child(3):after{
+    left: -85px;
+    top: 16px;
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+}
+.namibia i:nth-child(4){
+    left: 173px;
+    top: 90px;
+    transform: rotate(96deg);
+}
+.namibia i:nth-child(4):before{
+    left: 24px;
+    top: -7px;
+    transform: rotate(24deg);
+}
+.namibia i:nth-child(4):after{
+    left: 57px;
+    top: 21px;
+    transform: rotate(58deg);
+}
