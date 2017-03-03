@@ -460,7 +460,80 @@ h3{
 }
 
 /*United Kingdom*/
+.unitedkingdom:before,.unitedkingdom:after{
+    content: '';
+    position: absolute;
+    background: red;
+}
+.unitedkingdom:before{
+    width:80px;
+    height: 100%;
+    left: 50%;
+    top:0;
+    margin-left: -40px;
+}
+.unitedkingdom:after{
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top:50%;
+    margin-top: -40px;
+}
+.unitedkingdom i{
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    background: darkblue;
+    overflow: hidden;
+}
+.unitedkingdom i:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    box-shadow: inset 0 45px 0 darkblue, inset 0 70px 0 #fff, inset 0 95px 0 red, inset 0 110px 0 #fff;
+}
 
+.unitedkingdom i:first-child{
+    left: 0;
+    top:0;
+}
+.unitedkingdom i:first-child:before{
+    left: -29px;
+    top: 8px;
+    width: 118%;
+    transform: rotate(30deg);
+}
+
+.unitedkingdom i:nth-child(2){
+    right:0;
+    top:0;
+}
+.unitedkingdom i:nth-child(2):before{
+    left: -29px;
+    top: 8px;
+    width: 125%;
+    transform: rotate(-30deg);
+}
+.unitedkingdom i:nth-child(3){
+    left: 0;
+    bottom: 0;
+}
+.unitedkingdom i:nth-child(3):before{
+    left: -42px;
+    top: -28px;
+    width: 133%;
+    transform: rotate(-30deg);
+}
+.unitedkingdom i:nth-child(4){
+    right: 0;
+    bottom: 0;
+}
+.unitedkingdom i:nth-child(4):before{
+    left: -18px;
+    top: -13px;
+    width: 125%;
+    transform: rotate(34deg);
+}
 /*Saint Kitts and Nevis*/
 .saints{
     background-image: linear-gradient(to top left,red 50%,green 0%);
